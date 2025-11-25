@@ -104,6 +104,13 @@ backend/
 ---
 
 # 🗄️ Database Schema
+Note: Database seeding is not implemented. All records must be created manually via API or Admin interface.Create a admin in database table with admin as username and admin123 as password.
+INSERT INTO users (
+    username, password, first_name, last_name, email, role_id, enabled, deleted
+) VALUES (
+    'admin', '$2a$10$XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', 'System', 'Admin', 'admin@example.com', 1, true, false
+);
+
 
 ### **User**
 ```
